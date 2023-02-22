@@ -38,7 +38,7 @@ def translate_text(text):
             _, _, _, detected_languages = cld2.detect(text, returnVectors=True)
             detected_language= list(sum(detected_languages, ()))
             if 'hi' not in detected_language and 'un' not in detected_language :
-                p#rint(detected_language)
+                #print(detected_language)
                 result = GoogleTranslator(source='auto', target='hi').translate(text)
             #print(result)
                 return result
