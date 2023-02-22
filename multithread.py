@@ -17,7 +17,7 @@ target_lang = 'hi'
 # Set the root directory of HTML files
 #root_dir = '/home/aysenazezgi/classcentral_web/www.classcentral.com'
 
-root_dir = '/home/aysenazezgi/classcentral_web/www.classcentral.com'
+root_dir = 'classcentral_web/www.classcentral.com'
 
 # Initialize a list to store the lines that could not be translated
 not_translated_lines = []
@@ -102,6 +102,6 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
 
 # Write the lines that could not be translated to a text file
 
-with open('/home/aysenazezgi/classcentral_web/nottranslatedmultithread.txt', 'w') as f:
+with open('classcentral_web/nottranslatedmultithread.txt', 'w') as f:
         for file_path, line in not_translated_lines:
             f.write(f"{file_path}: {line}\n")
